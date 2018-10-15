@@ -30,7 +30,7 @@
 <p>get_sises реализуем в двух вариантах, без аргументов, он будет спрашивать размеры у пользователя, с аргументами будет просто возвращать их в кортеже.</p>
 <p>get_element() </p>
   <p><a href="#navigation">Вверх к Содержанию</a></p>
-  <p>Листинг скрипта на Python в jupiter реализующий заполнение 10 матриц случайных размерностей по спирали целыми числами начиная с 0:<a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/spiral_matrix.ipynb'>plug_in.R</a></p>
+  <p>Листинг скрипта на Python в jupiter реализующий заполнение 10 матриц случайных размерностей по спирали целыми числами начиная с 0:<a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/spiral_matrix.ipynb'>spiral_matrix.ipynb</a></p>
   
   ## 2. Быстрая сортировка с произвольной функцией сравнения. <a name="quick_sorting"></a>
   
