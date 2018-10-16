@@ -29,6 +29,19 @@
 <p>print_matrix(create_matrix(get_sises(),get_element))</p>
 
 <p>Листинг скрипта на Python в jupiter реализующий заполнение 10 матриц случайных размерностей по спирали целыми числами начиная с 0:<a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/spiral_matrix.ipynb'>spiral_matrix.ipynb</a></p>
+
+<p><code><pre>
+def get_element(maximum):
+    """Выдает числа от 0 до maximum"""
+    maximum-=1
+    number=0
+    yield number
+    
+    while number<maximum:
+        next=number+1
+        yield next
+        number=next
+</pre></code></p>
 <p><a href="#navigation">Вверх к Содержанию</a></p>
   ## 2. Быстрая сортировка с произвольной функцией сравнения. <a name="quick_sorting"></a>
   
