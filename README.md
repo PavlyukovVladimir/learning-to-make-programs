@@ -27,11 +27,9 @@
 <p>Хорошо бы теперь эту матрицу пользователю показать, сделаем метод print_matrix(Matrix) который получив матрицу, выводит ее на печать.</p>
 <p>Программа будет выглядеть как вызов одного метода:</p>
 <p>print_matrix(create_matrix(get_sises(),get_element))</p>
-<p>get_sises реализуем в двух вариантах, без аргументов, он будет спрашивать размеры у пользователя, с аргументами будет просто возвращать их в кортеже.</p>
 <p>get_element() </p>
-  <p><a href="#navigation">Вверх к Содержанию</a></p>
-  <p>Листинг скрипта на Python в jupiter реализующий заполнение 10 матриц случайных размерностей по спирали целыми числами начиная с 0:<a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/spiral_matrix.ipynb'>spiral_matrix.ipynb</a></p>
-  
+<p>Листинг скрипта на Python в jupiter реализующий заполнение 10 матриц случайных размерностей по спирали целыми числами начиная с 0:<a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/spiral_matrix.ipynb'>spiral_matrix.ipynb</a></p>
+<p><a href="#navigation">Вверх к Содержанию</a></p>
   ## 2. Быстрая сортировка с произвольной функцией сравнения. <a name="quick_sorting"></a>
   
   <p>Задано множество объектов X, и множество допустимых ответов Y, и существует целевая функция y*: X -> Y, значения которой y<sub>i</sub> = y*(x<sub>i</sub>) известны только на конечном подмножестве объектов {x<sub>1</sub>, …, x<sub>ℓ</sub>} ⊂ X.</p>
