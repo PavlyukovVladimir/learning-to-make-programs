@@ -27,7 +27,6 @@
 <p>Хорошо бы теперь эту матрицу пользователю показать, сделаем метод print_matrix(Matrix) который получив матрицу, выводит ее на печать.</p>
 <p>Программа будет выглядеть как вызов одного метода:</p>
 <p>print_matrix(create_matrix(get_sises(),get_element))</p>
-<p>get_element() </p>
 <p>Листинг скрипта на Python в jupiter реализующий заполнение 10 матриц случайных размерностей по спирали целыми числами начиная с 0:<a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/spiral_matrix.ipynb'>spiral_matrix.ipynb</a></p>
 <p><a href="#navigation">Вверх к Содержанию</a></p>
   ## 2. Быстрая сортировка с произвольной функцией сравнения. <a name="quick_sorting"></a>
