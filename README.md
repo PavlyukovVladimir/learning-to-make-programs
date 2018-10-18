@@ -43,6 +43,68 @@ def get_element(maximum):
         number=next
 ```
 
+```Python
+def get_sises():
+    """Возвращает кортеж (число строк матрицы, число столбцов матрицы), запрашивая числа у пользователя"""
+    rows_count=int(input("Введите число строк матрицы m: "))
+    columns_count=int(input("Введите число столбцов матрицы n: "))
+    return (rows_count,columns_count)
+```
+
+```Python
+def change_status_for_spiral(state):
+    """Получает состояние на текущем шаге (координаты coordinates(row,col),границы border(left,top,right,bottom),
+    направление движения direction{"right", "down", "left", "up"}), вернет на следующем"""
+    (row,col)=state[0]
+    (left,top,right,bottom)=state[1]
+    direction=state[2]
+    if direction=='r':#"right"
+        if col<right:
+            col+=1
+        elif col==right:
+            direction='d'#"down"
+            top+=1
+            row+=1
+        return ((row,col), (left,top,right,bottom), direction)
+    if direction=='d':#"down":
+        if row<bottom:
+            row+=1
+        elif row==bottom:
+            direction='l'#"left"
+            right-=1
+            col-=1
+        return ((row,col), (left,top,right,bottom), direction)
+    if direction=='l':#"left":
+        if col>left:
+            col-=1
+        elif col==left:
+            direction='u'#"up"
+            bottom-=1
+            row-=1
+        return ((row,col), (left,top,right,bottom), direction)
+    if direction=='u':#"up":
+        if row>top:
+            row-=1
+        elif row==top:
+            direction='r'#"right"
+            left+=1
+            col+=1
+        return ((row,col), (left,top,right,bottom), direction)
+    return 0
+```
+
+```Python
+
+```
+
+```Python
+
+```
+
+```Python
+
+```
+
 <p><a href="#navigation">Вверх к Содержанию</a></p>
   ## 2. Быстрая сортировка с произвольной функцией сравнения. <a name="quick_sorting"></a>
   
