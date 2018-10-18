@@ -94,15 +94,135 @@ def change_status_for_spiral(state):
 ```
 
 ```Python
-
+def create_matrix(dimentions,generator,change_status=change_status_for_spiral):
+    """По размерам матрицы создаст ее и заполнити генератор"""
+    rows_count=dimentions[0]
+    columns_count=dimentions[1]
+    ((row,col), (left,top,right,bottom), direction) = ((0,0), (0,0,columns_count-1,rows_count-1), 'r')
+    Matrix = [[0 for j in range(columns_count)] for i in range(rows_count)]
+    gen=generator(rows_count * columns_count)
+    
+    for i in gen:
+        Matrix[row][col]=i
+        ((row,col), (left,top,right,bottom), direction) = change_status(((row,col), (left,top,right,bottom), direction))
+    return Matrix
 ```
 
 ```Python
-
+import math
+def print_matrix(Matrix,separator=' ',left_border='',right_border=''):
+    """Распечатывает прямоугольные матрицы с числовыми данными"""
+    row=len(Matrix)#количество строк
+    col_counts=list(map(len,Matrix))#максимальное количество элементов в строке
+    
+    el_Matrix_lengths=[[0 for i in range(row)] for j in range(max(col_counts))]#транспонированная матрица
+    #el_Matrix_lengths = [x[:] for x in [[0]*row]*max(col_counts)] этот вариант не понял
+    for i in range(row):#вычисляем сколько символов нужно для записи каждого элемента
+        for j in range(col_counts[i]):
+            el_Matrix_lengths[j][i]=len(str(Matrix[i][j]))
+            
+    el_Matrix_lengths=list(map(lambda x: str(max(x)),el_Matrix_lengths))
+    #получаем список максимальных длин элементов в столбцах Matrix
+    for i in range(row):
+        print(left_border,end='')
+        for j in range(col_counts[i]-1):#печать элементов строки матрицы кроме последнего в одной строке
+            print((("%"+el_Matrix_lengths[j]+"d") % Matrix[i][j])+separator,end='')
+        print((("%"+el_Matrix_lengths[col_counts[i]-1]+"d") % Matrix[i][col_counts[i]-1])+right_border)
 ```
 
 ```Python
+#напечатаем десяток матриц со случайными размерами в пределах от 1 до 10
+import random
+n= 10
+print(str(1)+':')
+print_matrix(create_matrix(get_sises_2arg(random.randint(1, 10),random.randint(1, 10)),get_element),' ','   ')
 
+for i in range(1,n):
+    print(str(i+1)+':')
+    print_matrix(create_matrix(get_sises_2arg(random.randint(1, 10),random.randint(1, 10)),get_element),' ','   ')
+```
+
+```
+1:
+    0  1  2  3  4  5  6
+   25 26 27 28 29 30  7
+   24 43 44 45 46 31  8
+   23 42 53 54 47 32  9
+   22 41 52 55 48 33 10
+   21 40 51 50 49 34 11
+   20 39 38 37 36 35 12
+   19 18 17 16 15 14 13
+2:
+    0  1  2  3  4  5
+   23 24 25 26 27  6
+   22 39 40 41 28  7
+   21 38 47 42 29  8
+   20 37 46 43 30  9
+   19 36 45 44 31 10
+   18 35 34 33 32 11
+   17 16 15 14 13 12
+3:
+   0
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+4:
+    0  1  2  3  4  5  6  7  8  9
+   23 24 25 26 27 28 29 30 31 10
+   22 39 38 37 36 35 34 33 32 11
+   21 20 19 18 17 16 15 14 13 12
+5:
+    0  1  2  3  4 5
+   13 14 15 16 17 6
+   12 11 10  9  8 7
+6:
+   0 1 2 3 4 5 6 7 8
+7:
+    0  1 2
+   17 18 3
+   16 19 4
+   15 20 5
+   14 21 6
+   13 22 7
+   12 23 8
+   11 10 9
+8:
+    0  1  2  3  4  5
+   25 26 27 28 29  6
+   24 43 44 45 30  7
+   23 42 53 46 31  8
+   22 41 52 47 32  9
+   21 40 51 48 33 10
+   20 39 50 49 34 11
+   19 38 37 36 35 12
+   18 17 16 15 14 13
+9:
+    0  1
+   19  2
+   18  3
+   17  4
+   16  5
+   15  6
+   14  7
+   13  8
+   12  9
+   11 10
+10:
+    0  1  2
+   21 22  3
+   20 23  4
+   19 24  5
+   18 25  6
+   17 26  7
+   16 27  8
+   15 28  9
+   14 29 10
+   13 12 11
 ```
 
 <p><a href="#navigation">Вверх к Содержанию</a></p>
