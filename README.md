@@ -113,16 +113,16 @@ import math
 def print_matrix(Matrix,separator=' ',left_border='',right_border=''):
     """Распечатывает прямоугольные матрицы с числовыми данными"""
     row=len(Matrix)#количество строк
-    col_counts=list(map(len,Matrix))#максимальное количество элементов в строке
+    col_counts=list(map(len,Matrix))#количества элементов в строках
     
     el_Matrix_lengths=[[0 for i in range(row)] for j in range(max(col_counts))]#транспонированная матрица
-    #el_Matrix_lengths = [x[:] for x in [[0]*row]*max(col_counts)] этот вариант не понял
     for i in range(row):#вычисляем сколько символов нужно для записи каждого элемента
         for j in range(col_counts[i]):
             el_Matrix_lengths[j][i]=len(str(Matrix[i][j]))
             
     el_Matrix_lengths=list(map(lambda x: str(max(x)),el_Matrix_lengths))
     #получаем список максимальных длин элементов в столбцах Matrix
+    #числа сразу преобразованы в строки
     for i in range(row):
         print(left_border,end='')
         for j in range(col_counts[i]-1):#печать элементов строки матрицы кроме последнего в одной строке
