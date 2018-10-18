@@ -368,7 +368,7 @@ print(quicksort(num,fun3))
 
 <p><a href="#navigation">Вверх к Содержанию</a></p>
 
-## 2. Ранжирование текстов. <a name="ranking_texts"></a>
+## 3. Ранжирование текстов. <a name="ranking_texts"></a>
 
 <p></p>
 <p></p>
