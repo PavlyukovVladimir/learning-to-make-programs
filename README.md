@@ -41,7 +41,8 @@ def get_element(maximum):
         next=number+1
         yield next
         number=next
-```Python
+```
+
 <p><a href="#navigation">Вверх к Содержанию</a></p>
   ## 2. Быстрая сортировка с произвольной функцией сравнения. <a name="quick_sorting"></a>
   
