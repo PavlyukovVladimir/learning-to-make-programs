@@ -95,7 +95,7 @@ def change_status_for_spiral(state):
 
 ```Python
 def create_matrix(dimentions,generator,change_status=change_status_for_spiral):
-    """По размерам матрицы создаст ее и заполнити генератор"""
+    """По размерам матрицы dimentions создаст ее и заполнит в очередности регулируемой change_status, получая элементы из generator"""
     rows_count=dimentions[0]
     columns_count=dimentions[1]
     ((row,col), (left,top,right,bottom), direction) = ((0,0), (0,0,columns_count-1,rows_count-1), 'r')
