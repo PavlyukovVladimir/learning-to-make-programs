@@ -381,7 +381,12 @@ print(quicksort(num,fun3))
 <p><B>2. ЗАГРУЗКА ДАННЫХ ИНДЕКСАЦИИ</B></p>
 <p><B>3. ЗАПРОС</B></p>
 <p>Для решения задачи я создал 4 файла:<p>
- <p>1. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/sort.ipynb'>sort.ipynb</a></p>
+<p>1. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/запуск.bat'>запуск.bat</a></p>
+<p>Он просто запускает главный скрипт на исполнение</p>
+<p>2. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/main.py'>main.py</a></p>
+<p>3. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/indexer.py'>indexer.py</a></p>
+<p>4. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/loader.py'>loader.py</a></p>
+<p>5. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/Query.py'>Query.py</a></p>
 
 ```Python
 
