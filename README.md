@@ -385,10 +385,12 @@ print(quicksort(num,fun3))
 <p>Он просто запускает главный скрипт main.py на исполнение</p>
 <p>2. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/main.py'>main.py</a></p>
 <p>Подгружает некоторые общие для всех скриптов библиотеки и методы, вызывает диалог с пользователем и в зависимости от резултатов запускает с помощью метода exec() остальные скрипты, например скрипт Query.py:</p>
+
 ```Python
 with open('Query.py', "r", encoding="utf-8") as source_file:
   exec(source_file.read())
 ```
+
 <p>3. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/Indexer.py'>Indexer.py</a></p>
 <p></p>
 <p>4. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/loader.py'>loader.py</a></p>
