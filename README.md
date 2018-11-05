@@ -382,6 +382,7 @@ print(quicksort(num,fun3))
 <p><B>3. ЗАПРОС</B></p>
 <p>Для решения задачи я создал 4 файла:<p>
  <p>1. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/sort.ipynb'>sort.ipynb</a></p>
+
 ```Python
 
 ```
