@@ -389,7 +389,8 @@ print(quicksort(num,fun3))
 <p>5. <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/Ranjirovshik/Query.py'>Query.py</a></p>
 
 ```Python
-
+with open('Query.py', "r", encoding="utf-8") as source_file:
+  exec(source_file.read())
 ```
 
 <p><a href="#navigation">Вверх к Содержанию</a></p>
