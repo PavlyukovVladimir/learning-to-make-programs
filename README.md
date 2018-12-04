@@ -5,7 +5,8 @@
   <base href="https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/" ></base>
 </head>
 <body>
-
+# Контрольная <a href='https://github.com/PavlyukovVladimir/learning-to-make-programs/blob/master/programmirovaniye.ipynb'>programmirovaniye.ipynb</a>
+  
   # learning to make programs
   
   ## Навигация <a name="navigation"></a>
